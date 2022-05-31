@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Bootstrap</title>
+   <link rel="stylesheet" href="./css/bootstrap.css">
+</head>
+<body>
+   <!-- HEADER -->
+   <header></header>
+
+   <!-- MAIN -->
+   <main>
+      <section class="catalog mt-3">
+         <div class="container">
+            <h2 class="text-center fs-1">Movies catalog</h2>
+            <div class="row">
+               <div class="col-4">
+                  <form action="echo.htmlacademy.ru" method="post">
+                     <input class="form-control mb-3" type="text" name="user_name" placeholder="ave">
+                     <input class="form-control mb-3" type="text" name="user_name" placeholder="5">
+                     <select class="form-select mb-3" name="select">
+                        <option value="all">All</option>
+                        <option value="avengers">Avengers</option>
+                        <option value="iron-man">Iron man</option>
+                        <option value="thor">Thor</option>
+                     </select>
+                     <input class="form-control mb-3" list="rating" placeholder="Rating (high to low)">
+                     <datalist id="rating">
+                        <option value="Rating to high">
+                        <option value="Rating to low">
+                      </datalist>
+                      <button class="btn btn-primary w-100 mb-3" type="submit">Search</button>
+                  </form>
+                  <h3 class="text-center fs-1">Bookmarked movies</h3>
+                  <ul class="list-group">
+                     <li class="list-group-item">
+                        <strong>Avengers: Infinity War</strong>
+                        <button class="btn btn-danger d-block mt-2" type="button">Remove</button>
+                     </li>
+                     <li class="list-group-item">
+                        <strong>The Avengers</strong>
+                        <button class="btn btn-danger d-block mt-2" type="button">Remove</button>
+                     </li>
+                     <li class="list-group-item">
+                        <strong>12 Years a Slave</strong>
+                        <button class="btn btn-danger d-block mt-2" type="button">Remove</button>
+                     </li>
+                   </ul>
+               </div>
+               <div class="col-8">
+                  <strong class="fs-4">Search results: 39</strong>
+                  <div class="alert alert-primary" role="alert">
+                     Use the form on the left to search for a movie
+                   </div>
+                   <div class="row mb-3">
+                      <div class="col-6">
+                        <div class="card">
+                           <img class="card-img-top" src="./images/infinity-war.jpg" alt="avengers">
+                           <div class="card-body">
+                              <strong class="card-title fs-4">Avengers: Infinity War</strong>
+                              <div class="d-flex align-items-center mb-4">
+                                 <img src="./images/calendar.png" alt="" width="30" height="30">
+                                 <p class="m-0">2018</p>
+                              </div>
+                              <div class="d-flex align-items-center mb-3">
+                                 <img src="./images/star.png" alt="" width="30" height="30">
+                                 <p class="m-0">8.7</p>
+                              </div>
+                              <button class="btn btn-outline-primary me-3" type="submit">Watch trailer</button>
+                              <button class="btn btn-outline-primary me-3" type="submit">More info</button>
+                              <button class="btn btn-outline-primary" type="submit">Bookmark</button>
+                           </div>
+                         </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="card">
+                           <img src="./images/avengers.jpg" class="card-img-top" alt="avengers">
+                           <div class="card-body">
+                              <strong class="card-title fs-4">The Avengers</strong>
+                              <div class="d-flex align-items-center mb-4">
+                                 <img src="./images/calendar.png" alt="" width="30" height="30">
+                                 <p class="m-0">2012</p>
+                              </div>
+                              <div class="d-flex align-items-center mb-3">
+                                 <img src="./images/star.png" alt="" width="30" height="30">
+                                 <p class="m-0">8.1</p>
+                              </div>
+                              <button class="btn btn-outline-primary me-3" type="submit">Watch trailer</button>
+                              <button class="btn btn-outline-primary me-3" type="submit">More info</button>
+                              <button class="btn btn-outline-primary" type="submit">Bookmark</button>
+                           </div>
+                         </div>
+                      </div>
+                   </div>
+                   <ul class="pagination pagination-sm d-flex justify-content-center">
+                     <li class="page-item active" aria-current="page">
+                       <a class="page-link" href="#">1</a>
+                     </li>
+                     <li class="page-item"><a class="page-link" href="#">2</a></li>
+                     <li class="page-item"><a class="page-link" href="#">3</a></li>
+                     <li class="page-item"><a class="page-link" href="#">4</a></li>
+                   </ul>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+
+   <!-- FOOTER -->
+   <footer></footer>
+</body>
+</html>
